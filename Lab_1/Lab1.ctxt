@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Lab1
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=fin
+comment2.target=void\ solve_seventh(java.util.Scanner)
+comment3.params=fin
+comment3.target=void\ solve_sixth(java.util.Scanner)
+comment4.params=fin
+comment4.target=void\ solve_fifth(java.util.Scanner)
+comment5.params=fin
+comment5.target=void\ solve_fourth(java.util.Scanner)
+comment6.params=fin
+comment6.target=void\ solve_third(java.util.Scanner)
+comment7.params=fin
+comment7.target=void\ solve_second(java.util.Scanner)
+comment8.params=a\ b
+comment8.target=int\ max(int,\ int)
+comment9.params=fin
+comment9.target=void\ solve_first(java.util.Scanner)
+numComments=10
