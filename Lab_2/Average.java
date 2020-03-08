@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Average {
 
-    //Read until -1, print average of numbers
-
     public static void main(String [] args)
     {
         int x, sum = 0, num = 0;
