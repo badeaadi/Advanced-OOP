@@ -22,7 +22,7 @@ Classes involved:
 
 
 4.**TouristPoint** : -
-    Addition from town and node - has some happiness index which will be used afterwards
+    Addition from town and node - has some beauty index which will be used afterwards
 
 ---
 
