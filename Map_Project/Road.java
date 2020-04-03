@@ -29,11 +29,17 @@ class Road {
         this.bicycleWay = bicycle;
         this.price = newPrice;
     }
-    private boolean possibleTransport(Transport t) {
-        if (pedestrianWay && t.walky())
-            return true;
-        if (bicycleWay && t.biky())
-            return true;
+    public boolean possibleTransport(Transport t) {
+        if (t.walky()) {
+            if (pedestrianWay)
+                return true;
+            return false;
+        }
+        if (t.biky()) {
+            if (bicycleWay)
+                return true;
+            return false;
+        }
         if (maxWeight > t.getWeight() && maxHeight > t.getHeight())
             return true;
         return false;
@@ -44,25 +50,31 @@ class Road {
             return a;
         return b;
     }
-    private double max(double a, double b)
-    {
-        return a + b - min(a, b);
-    }
-
-    private Cost getCost(Cost c, Transport t)
+    public Cost getCost(Transport t)
     {
         if (!possibleTransport(t))
-            return new Cost(0, 0, 0, true);
+            return new Cost(1000, 1000, 1000, false);
 
 
         double newTime = distance / min(topSpeed, t.getTopSpeed());
         double newPay = price;
 
         if (bicycleWay && t.biky())
-            newPay = 0;
+            newPay = price / 2;
         if (pedestrianWay && t.walky())
             newPay = 0;
 
         return new Cost(newTime, newPay, distance, true);
+    }
+
+    public int getTownA() {
+        return townA;
+    }
+
+    public int getTownB() {
+        return townB;
+    }
+    public void displayRoad() {
+        System.out.println("There is a road from: " + Town.names.get(townA) + " to " + Town.names.get(townB) + " and vice versa");
     }
 }

@@ -19,9 +19,7 @@ public class Transport {
         height = newHeight;
         topSpeed = newTopSpeed;
     }
-    public boolean walky() {
-        return pedestrian;
-    }
+    public boolean walky() { return pedestrian; }
     public boolean biky() {
         return bicycle;
     }
@@ -36,6 +34,21 @@ public class Transport {
     public double getTopSpeed()
     {
         return topSpeed;
+    }
+    public String getName() {return name;}
+
+    public void displayTransport() {
+        System.out.println("This transportation is called:" + name);
+        if (!walky() && !biky()) {
+            System.out.println("All details:");
+            System.out.println("Weight: " + weight);
+            System.out.println("Height: " + height);
+            System.out.println("TopSpeed: " + topSpeed);
+        }
+        else {
+            System.out.println("TopSpeed: " + topSpeed);
+        }
+
     }
 
 }
