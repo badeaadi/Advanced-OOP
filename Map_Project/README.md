@@ -18,7 +18,7 @@ Classes involved:
 ---
 
 3.**Activity** : -
-    Addition from town and node - has some happiness index which will be used afterwards
+    Derived also from node - has some happiness index which will be used afterwards
 
 ---
 
