@@ -1,10 +1,10 @@
-Ma****p Project -
+Map Project -
 It is given a map marked by certain nodes(towns to visit or activities to do), with some transporation possibilities.
 
 Classes involved:
 
-1.**Node** : Abstract class with:
-    - "getIndex" method which gets the index from some town or activity name
+1.**Node** : Abstract class with: 
+⋅⋅*"getIndex" method which gets the index from some town or activity name⋅⋅
      
 2.**Town** : 
     - Class to be populated from Main with objects
@@ -18,10 +18,10 @@ Classes involved:
     - Has pedestrian and bicycle transportation types already given(lets the user decide wheter to use them in Main)
 
 5.**Road**:
-    - Ties towns or activities one to another
-    - Has method "isPossible" which decides if a certain transportation method is fit for this road
-    - Has method "getCost" which calculates the Cost based on a Road and a certain transportation unit
-    - Has method "displayRoad" which hives a full detail about the road.
+    -Ties towns or activities one to another
+    -Has method "isPossible" which decides if a certain transportation method is fit for this road
+    -Has method "getCost" which calculates the Cost based on a Road and a certain transportation unit
+    Has method "displayRoad" which hives a full detail about the road.
     
 6.**Cost**:
     - Instantiable class with more constructors
