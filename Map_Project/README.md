@@ -5,40 +5,40 @@ Classes involved:
 
 ---
 
-1.**Node** : Abstract class with: 
- 'getIndex' method which gets the index from some town or activity name⋅⋅
+1.**Node** : Abstract class with: -
+   'getIndex' method which gets the index from some town or activity name⋅⋅
 
 ---
 
-2.**Town** : 
-    - Class to be populated from Main with objects
+2.**Town** : -
+    Class to be populated from Main with objects
 
 ---
 
-3.**Activity** : 
-    - Addition from town and node - has some happiness index which will be used afterwards
+3.**Activity** : -
+    Addition from town and node - has some happiness index which will be used afterwards
 
 ---
 
-4.**Transport**:
-    - Contains name of transport, and several details of the transportation method
-    - Has `displayTransport` method which gives a full detail in System.out about itself.
-    - Has pedestrian and bicycle transportation types already given(lets the user decide wheter to use them in Main)
+4.**Transport**: -
+    Contains name of transport, and several details of the transportation method
+    Has `displayTransport` method which gives a full detail in System.out about itself.
+    Has pedestrian and bicycle transportation types already given(lets the user decide wheter to use them in Main)
 
 ---
 
-5.**Road**:
-    -Ties towns or activities one to another
-    -Has method `isPossible` which decides if a certain transportation method is fit for this road
-    -Has method `getCost` which calculates the Cost based on a Road and a certain transportation unit
-    -Has method 1displayRoad1 which hives a full detail about the road.
+5.**Road**: -
+    Ties towns or activities one to another
+    Has method `isPossible` which decides if a certain transportation method is fit for this road
+    Has method `getCost` which calculates the Cost based on a Road and a certain transportation unit
+    Has method 1displayRoad1 which hives a full detail about the road.
 
 ---
 
-6.**Cost**:
-    - Instantiable class with more constructors
-    - Has Method `addCost` which calculates the sum of two costs
-    - `toString` method overloaded, which gives our description about this object.
+6.**Cost**: -
+    Instantiable class with more constructors
+    Has Method `addCost` which calculates the sum of two costs
+    `toString` method overloaded, which gives our description about this object.
 
 ---
 
@@ -47,7 +47,7 @@ Classes involved:
 
 ---
 
-8.**Harta** 
+8.**Harta** -
     Service class, used for implementing operations for the given network.
     Is Singleton, is instantiated within Main class and has only one instance.
     Has static `ArrayLists` which contain roads, towns and transportations methods.
@@ -59,7 +59,6 @@ Classes involved:
 
 ---
 
-
-9.**Main**
-    - Is split in two functions, one uploads the information to the graph, and the other queries the graph
+9.**Main** -
+    Is split in two functions, one uploads the information to the graph, and the other queries the graph
     
