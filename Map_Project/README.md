@@ -1,4 +1,6 @@
 Map Project
+---
+
 It is given a map marked by certain nodes(towns to visit or activities to do), with some transporation possibilities.
 The result displayed will be the best road from one node to another regarding time, price or distance traveled.
 Classes involved:
