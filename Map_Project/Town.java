@@ -17,4 +17,8 @@ public class Town extends Node {
     public void setName(String newName) {
         name = newName;
     }
+
+    public void displayTownActivities(String name) {
+
+    }
 }

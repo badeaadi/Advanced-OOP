@@ -18,18 +18,22 @@ Classes involved:
 ---
 
 3.**Activity** : -
-    Derived also from node - has some happiness index which will be used afterwards
+    Addition from town and node - has some happiness index which will be used afterwards
+
+
+4.**TouristPoint** : -
+    Addition from town and node - has some happiness index which will be used afterwards
 
 ---
 
-4.**Transport**: -
+5.**Transport**: -
     Contains name of transport, and several details of the transportation method
     Has `displayTransport` method which gives a full detail in System.out about itself.
     Has pedestrian and bicycle transportation types already given(lets the user decide wheter to use them in Main)
 
 ---
 
-5.**Road**: -
+6.**Road**: -
     Ties towns or activities one to another
     Has method `isPossible` which decides if a certain transportation method is fit for this road
     Has method `getCost` which calculates the Cost based on a Road and a certain transportation unit
@@ -37,19 +41,19 @@ Classes involved:
 
 ---
 
-6.**Cost**: -
+7.**Cost**: -
     Instantiable class with more constructors
     Has Method `addCost` which calculates the sum of two costs
     `toString` method overloaded, which gives our description about this object.
 
 ---
 
-7.**CostTime**, **CostDistance**, **CostDistance**
+8.**CostTime**, **CostDistance**, **CostDistance**
     - All implement `Comparator<Cost>`, will be used in Dijsktra's Algorithm.
 
 ---
 
-8.**Harta** -
+9.**Harta** -
     Service class, used for implementing operations for the given network.
     Is Singleton, is instantiated within Main class and has only one instance.
     Has static `ArrayLists` which contain roads, towns and transportations methods.
@@ -61,6 +65,6 @@ Classes involved:
 
 ---
 
-9.**Main** -
+10.**Main** -
     Is split in two functions, one uploads the information to the graph, and the other queries the graph
     

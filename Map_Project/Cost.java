@@ -55,6 +55,7 @@ public class Cost {
         this.index = newIndex;
     }
 
+    @Override
     public String toString() {
         return "It takes " + time + " hours, " + pay + " pay, " + distance + " distance,"  + trans;
     }

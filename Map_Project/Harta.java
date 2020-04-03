@@ -2,9 +2,11 @@ import java.util.*;
 
 public class Harta {
 
+
     private ArrayList<Town> towns = new ArrayList<>();
     private ArrayList<Transport> transports = new ArrayList<>();
     private ArrayList<Road> roads = new ArrayList<>();
+    private ArrayList<Activity> activities = new ArrayList<>();
 
     private Cost getCost(int firstIndex, int secondIndex, Comparator<Cost> comp) {
 
@@ -83,6 +85,7 @@ public class Harta {
     }
     //Singleton design pattern for the map
     private static Harta single_instance = null;
+
     public static Harta getInstance() {
         if (single_instance == null)
             single_instance = new Harta();
@@ -99,6 +102,9 @@ public class Harta {
     public void addRoad(Road newRoad) {
         roads.add(newRoad);
     }
+    public void addActivity(Activity newActivity) {
+        activities.add(newActivity);
+    }
     public void displayTransports() {
         System.out.println("TRANSPORTS:");
         for (Transport t : transports)
@@ -109,5 +115,18 @@ public class Harta {
         System.out.println("ROADS:");
         for (Road r : roads)
             r.displayRoad();
+    }
+    public void displayActivities(String name) {
+        System.out.println();
+        System.out.println(name + ", things to do : ");
+        int cnt = 0;
+        for (Activity act : activities)
+            if (act.getName().equals(name)) {
+                System.out.println("In " + name + " there is " + act.getActivityName() );
+                cnt ++;
+            }
+        if (cnt == 0) {
+            System.out.println("Sorry, there's nothing to do");
+        }
     }
 }
