@@ -12,28 +12,28 @@ Classes involved:
 
 ---
 
-**2. Town** : -
+**2. Town** : 
 *    Class to be populated from Main with objects
 
 ---
 
-**3. Activity** : -
+**3. Activity** :
 *    Addition from town and node - has some happiness index which will be used afterwards
 
 
-**4. TouristPoint** : -
+**4. TouristPoint** :
 *    Addition from town and node - has some beauty index which will be used afterwards
 
 ---
 
-**5. Transport**: -
+**5. Transport**:
 *    Contains name of transport, and several details of the transportation method
 *    Has `displayTransport` method which gives a full detail in System.out about itself.
 *    Has pedestrian and bicycle transportation types already given(lets the user decide wheter to use them in Main)
 
 ---
 
-**6. Road**: -
+**6. Road**:
 *    Ties towns or activities one to another
 *    Has method `isPossible` which decides if a certain transportation method is fit for this road
 *    Has method `getCost` which calculates the Cost based on a Road and a certain transportation unit
@@ -41,7 +41,7 @@ Classes involved:
 
 ---
 
-**7. Cost**: -
+**7. Cost**:
 *    Instantiable class with more constructors
 *    Has Method `addCost` which calculates the sum of two costs
 *    `toString` method overloaded, which gives our description about this object.
@@ -65,6 +65,6 @@ Classes involved:
 
 ---
 
-**10. Main** -
+**10. Main**
  *   Is split in two functions, one uploads the information to the graph, and the other queries the graph
     
