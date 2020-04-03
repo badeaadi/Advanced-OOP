@@ -34,9 +34,12 @@ Classes involved:
     - `toString` method overloaded, which gives our description about this object.
 
 --- 
+
 7.**CostTime**, **CostDistance**, **CostDistance**
     - All implement Comparator<Cost>, will be used in Dijsktra's Algorithm.
+
 ---
+ 
 8.**Harta** 
     - Service class, used for implementing operations for the given network.
     - Is Singleton, is instantiated within Main class and has only one instance
@@ -47,6 +50,7 @@ Classes involved:
     - So, the graph minimum distance algorithm is implemented for time, distance, and price within the same code(just changing the given PriorityQueue)
     - Has `displayAllBest` which gives the best three ways from a node to another
 ---
+ 
 9.**Main**
     - Is split in two functions, one uploads the information to the graph, and the other queries the graph
     
