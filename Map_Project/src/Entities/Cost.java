@@ -66,7 +66,10 @@ public class Cost {
 
     @Override
     public String toString() {
-        return "It takes " + time + " hours, " + pay + " pay, " + distance + " distance,"  + trans;
+        if (time < 1000)
+            return "It takes " + time + " hours, " + pay + " pay, " + distance + " distance,";
+        else
+            return "Did not find any roads";
     }
 }
 class CostTime implements Comparator<Cost> {

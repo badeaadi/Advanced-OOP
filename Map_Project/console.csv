@@ -11,3 +11,11 @@ Add Road,2020-04-26 20:43:15.608
 Add Town,2020-04-26 20:45:30.704
 Add transportation,2020-04-26 21:11:20.706
 add transportation,2020-04-26 21:14:58.459
+find road Bucuresti Pitesti,2020-04-28 21:52:56.696
+add road,2020-04-28 21:59:25.286
+find road Bucuresti Constanta,2020-04-28 21:59:30.682
+stop,2020-04-28 22:00:01.79
+add town,2020-04-28 22:00:34.351
+add road,2020-04-28 22:00:44.195
+find road Bucuresti Constanta,2020-04-28 22:00:52.52
+stop,2020-04-28 22:01:04.118
