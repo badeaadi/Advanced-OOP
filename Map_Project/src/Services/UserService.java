@@ -31,6 +31,7 @@ public class UserService {
 
         do {
             line = fin.nextLine();
+            boolean valid = true;
 
             switch (line.toLowerCase()) {
                 case "help":
@@ -102,14 +103,17 @@ public class UserService {
                     auxTransport.write(lineGood);
                     auxTransport.close();
                     break;
-                case "stop":
-                    break;
 
                 default:
+                    valid = false;
                     System.out.println("Invalid command");
                     break;
             }
-            writetime(line, fw);
+
+
+            if (valid) {
+                writetime(line, fw);
+            }
 
         } while (!line.equals("stop"));
 
