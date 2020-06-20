@@ -53,7 +53,7 @@ Classes involved:
 
 ---
 
-9.**Entities.Harta** -
+9.**Entities.Map** -
     Services.Service class, used for implementing operations for the given network.
     Is Singleton, is instantiated within Services.Main class and has only one instance.
     Has static `ArrayLists` which contain roads, towns and transportations methods.

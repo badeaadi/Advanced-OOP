@@ -53,4 +53,14 @@ public class Transport {
 
     }
 
+    public String textTransports() {
+        String sol = "One transportation is called:" + name + '\n';
+        if (!walky() && !biky()) {
+            sol += "All details:\n";
+            sol += "Weight: " + weight + "\n";
+            sol += "Height: " + height + "\n";
+        }
+        sol += "TopSpeed: " + topSpeed + "\n";
+        return sol;
+    }
 }

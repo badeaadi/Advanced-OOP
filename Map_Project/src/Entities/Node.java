@@ -23,4 +23,8 @@ public abstract class Node {
                 return i;
         return -1;
     }
+
+    static String getName(int index) {
+        return names.get(index);
+    }
 }

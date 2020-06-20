@@ -16,8 +16,6 @@ public class Service {
     private static Service ourInstance = new Service();
 
 
-
-
     static Service getInstance() {
 
         return ourInstance;
